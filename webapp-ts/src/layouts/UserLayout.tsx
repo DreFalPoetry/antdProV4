@@ -1,4 +1,4 @@
-import { DefaultFooter, MenuDataItem, getMenuData, getPageTitle } from '@ant-design/pro-layout';
+import { MenuDataItem, getMenuData, getPageTitle } from '@ant-design/pro-layout';
 import { Helmet } from 'react-helmet';
 import { Link } from 'umi';
 import React from 'react';
@@ -6,7 +6,7 @@ import { formatMessage } from 'umi-plugin-react/locale';
 import { connect } from 'dva';
 import SelectLang from '@/components/SelectLang';
 import { ConnectProps, ConnectState } from '@/models/connect';
-import logo from '../assets/logo.svg';
+import logoDisplay from '@/utils/logoDisplay';
 import styles from './UserLayout.less';
 
 export interface UserLayoutProps extends ConnectProps {
@@ -50,15 +50,14 @@ const UserLayout: React.FC<UserLayoutProps> = props => {
           <div className={styles.top}>
             <div className={styles.header}>
               <Link to="/">
-                <img alt="logo" className={styles.logo} src={logo} />
-                <span className={styles.title}>Ant Design</span>
+                <span className={styles.logo}>{logoDisplay('30', '#000000d9')}</span>
+                <span className={styles.title}>dsTailor for Publisher</span>
               </Link>
             </div>
-            <div className={styles.desc}>Ant Design 是西湖区最具影响力的 Web 设计规范</div>
+            <div className={styles.desc}>Local and innovated marketing solution by <a target="_blank"  href="https://www.moca-tech.net">MOCA</a></div>
           </div>
           {children}
         </div>
-        <DefaultFooter />
       </div>
     </>
   );

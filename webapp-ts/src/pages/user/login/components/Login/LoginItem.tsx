@@ -21,6 +21,7 @@ export interface LoginItemProps extends Partial<FormItemProps> {
   name?: string;
   style?: React.CSSProperties;
   placeholder?: string;
+  autoComplete?:string;
   buttonText?: React.ReactNode;
   countDown?: number;
   getCaptchaButtonText?: string;

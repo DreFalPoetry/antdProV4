@@ -1,6 +1,6 @@
 {
   "name": "AdsTailor for Publisher",
-  "short_name": "AdsTailor for Publisher",
+  "short_name": "AdsTailor",
   "display": "standalone",
   "start_url": "./?utm_source=homescreen",
   "theme_color": "#002140",

@@ -20,7 +20,7 @@ import Authorized from '@/utils/Authorized';
 import RightContent from '@/components/GlobalHeader/RightContent';
 import { ConnectState } from '@/models/connect';
 import { isAntDesignPro, getAuthorityFromRouter } from '@/utils/utils';
-import logo from '../assets/logo.svg';
+import logoDisplay from '@/utils/logoDisplay';
 
 const noMatch = (
   <Result
@@ -149,7 +149,7 @@ const BasicLayout: React.FC<BasicLayoutProps> = props => {
   };
   return (
     <ProLayout
-      logo={logo}
+      logo={logoDisplay('24', 'white')}
       formatMessage={formatMessage}
       menuHeaderRender={(logoDom, titleDom) => (
         <Link to="/">
