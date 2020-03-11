@@ -55,3 +55,12 @@ npm test
 ## More
 
 You can view full document on our [official website](https://pro.ant.design). And welcome any feedback in our [github](https://github.com/ant-design/ant-design-pro).
+
+
+
+### 页面组织结构
+
+`document.ejs` :
+
+页面模板加载，当页面强制刷新时首先加载模板，显示默认的简单样式
+
